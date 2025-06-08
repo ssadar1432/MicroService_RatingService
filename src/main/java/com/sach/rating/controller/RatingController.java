@@ -36,8 +36,8 @@ public class RatingController {
 
     @GetMapping("/getAllRating")
     public ResponseEntity<List<Rating>> getAllRating(){
-        System.out.println("Test Rating");
-        return ResponseEntity.status(HttpStatus.FOUND).body(ratingService.getAllRating());
+
+                return ResponseEntity.status(HttpStatus.FOUND).body(ratingService.getAllRating());
 
     }
     @PostMapping
