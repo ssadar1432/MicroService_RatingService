@@ -48,6 +48,6 @@ public class RatingServiceImpl implements RatingService {
 
     @Override
     public List<Rating> getRatingByUserID(int userId) {
-        return ratingRepo.findByUserID(userId);
+        return ratingRepo.findByUserId(userId);
     }
 }
