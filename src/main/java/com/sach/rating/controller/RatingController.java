@@ -30,7 +30,7 @@ public class RatingController {
     @GetMapping("/users/{userId}")
     public ResponseEntity<List<Rating>> getRatingByUserID(@PathVariable int userId){
 
-        return ResponseEntity.status(HttpStatus.FOUND).body(ratingService.getRatingByUserID(userId));
+        return ResponseEntity.status(HttpStatus.OK).body(ratingService.getRatingByUserID(userId));
 
     }
 
